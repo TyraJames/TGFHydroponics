@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+    margin:0;
+    font-family:Arial;
+    background: white;
+}
+/* Position the navbar container inside the image */
+.container {
+  position: absolute;
+  margin: 20px;
+  width: auto;
+}
+
+/* The navbar */
+.topnav {
+  overflow: hidden;
+  background-color: rgb(10, 189, 64);
+}
+
+/* Style the top navigation bar */
+.topnav {
+  overflow: hidden;
+  background-color: rgb(16, 156, 77);
+  text-align: center;
+}
+
+/* Navbar links */
+.topnav a {
+  float: left;
+  display: block;
+  color: yellowgreen;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+.active {
+  background-color: #04AA6D;
+  color: white;
+}
+
+.topnav .icon {
+  display: none;
+}
+
+.dropdown {
+  float: left;
+  overflow: hidden;
+}
+
+.dropdown .dropbtn {
+  font-size: 17px;    
+  border: none;
+  outline: none;
+  color: lightgreen;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #3cb371;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  float: none;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.topnav a:hover, .dropdown:hover .dropbtn {
+  background-color: #555;
+  color: white;
+}
+
+.dropdown-content a:hover .dropdown-content b:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+div.gallery {
+  margin: 5px;
+  border: 1px none;
+  float: left;
+  width: 180px;
+}
+
+div.gallery:hover {
+  border: 1px solid #777;
+}
+
+div.gallery img {
+  width: 100%;
+  height: auto;
+  float: left;
+}
+
+div.desc {
+  padding: 15px;
+  text-align: center;
+}
+
+/* Create two equal columns that floats next to each other */
+/* Left column */
+.leftcolumn {  
+  float: left;
+  width: 50%;
+}
+
+/* Right column */
+.rightcolumn {
+  float: left;
+  width: 50%;
+  padding-left: 60px;
+}
+/* Add a card effect for articles */
+.card {
+  background-color: whitesmoke;
+  padding: 50px;
+  margin-top: 20px;
+  margin-left: 10px;
+  margin-right: 10px ;
+  margin-bottom: 20px;
+  text-align: center;
+}
+/* Rounded border */
+p.round1 {
+  border: 8px solid lightgreen;
+  border-radius: 5px;
+  padding: 5px;
+  text-align: center;
+}
+/* Footer */
+.footer {
+padding: 10px;
+text-align: center;
+background: white;
+margin-top: 10px;
+}
+
+/* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 800px) {
+  .leftcolumn, .rightcolumn {  
+    width: 100%;
+    padding: 0;
+  }
+}
+
+/* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
+@media screen and (max-width: 400px) {
+  .topnav a {
+    float: none;
+    width: 100%;
+  }
+}
+
+
+@media screen and (max-width: 600px) {
+  .topnav a:not(:first-child), .dropdown .dropbtn {
+    display: none;
+  }
+  .topnav a.icon {
+    float: right;
+    display: block;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .topnav.responsive {position: relative;}
+  .topnav.responsive .icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .topnav.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+  .topnav.responsive .dropdown {float: none;}
+  .topnav.responsive .dropdown-content {position: relative;}
+  .topnav.responsive .dropdown .dropbtn {
+    display: block;
+    width: 100%;
+    text-align: left;
+  }
+}
+</style>
+</head>
+<body>
+
+  
+  <div class="banner">
+    <img src="images/bannera.jpeg" alt="banner" width="100%" height="140px";>
+    </div>
+      <div class="topnav" id="myTopnav">
+        <a href="dropdwn.html" class="active">Home</a>
+        <a href="contact.html">Contact Us</a>
+        <a href="aboutus.html">About Us</a>
+        <div class="dropdown">
+          <button class="dropbtn">Products 
+          </button>
+          <div class="dropdown-content">
+            <a href="Seedlings.html">Seedlings</a>
+            <a href="hydroponic.html">Hydroponic Accessories</a>
+            <a href="substratesandfertilizers.html">Substrates and Fertilizers</a>
+          </div> 
+        </div>   
+    <div class="dropdown">
+      <button class="dropbtn">Services 
+      </button>
+      <div class="dropdown-content">
+        <a href="systeminstalment.html">System Instalment</a>
+        <a href="courses.html">Hydroponic Courses/Classes</a>
+        <a href="personalizedsystems.html">Personalized Systems</a>
+      </div>
+    </div> 
+    <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
+    </div>
+  <br>
+  <div class="row">
+    <div class="leftcolumn">
+      <p class="round1">SUBSTRATES & FERTILIZERS</p>
+        <div class="gallery">
+          <a target="_blank" href="images/npk2t2.png">
+            <img src="images/npk2t2.png" alt="img" width="600" height="400">
+          </a>
+          <div class="desc">19:19:19 NPK Fertilizer</div>
+        </div>
+        
+        <div class="gallery">
+          <a target="_blank" href="images/perlite1.png">
+            <img src="images/perlite1.png" alt="img" width="600" height="400">
+          </a>
+          <div class="desc">Perlite</div>
+        </div>
+        
+        <div class="gallery">
+          <a target="_blank" href="images/rockwoll.jpeg">
+            <img src="images/rockwoll.jpeg" alt="img" width="600" height="400">
+          </a>
+          <div class="desc">Rockwool</div>
+        </div>
+     </div>
+    </div>
+  
+    <div class="rightcolumn">
+    <div class="card">
+      <h4>What is a Hydroponic Substrate?</h4>
+      <p><img src="images/Hydroponic-Growing-Mediums-1.jpg" style="height:240px; width: 320px;"></p>
+      <P> A hydroponic substrate is essentially a soilless growing medium. This is something that allows roots to bind, improves water retention, and maintains air pockets to maximize the health of the root systems of the plants.</P>
+    </div>
+    </div>
+
+
+  <div class="footer">
+    <h3> &copy; TGF HYDROPONICS</h3>
+  </div>
+  
+
+<script>
+function myFunction() {
+  var x = document.getElementById("myTopnav");
+  if (x.className === "topnav") {
+    x.className += " responsive";
+  } else {
+    x.className = "topnav";
+  }
+}
+</script> 
+
+</body>
+</html>
